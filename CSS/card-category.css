@@ -1,0 +1,88 @@
+.card-category {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  flex-direction: column;
+  padding-top: 30px;
+  text-align: center;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  scroll-behavior: smooth;
+}
+.card-category .card-category-img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  align-items:center;
+  border-radius: 50%;
+}
+
+.title-photography {
+  margin-top: 16px;
+  margin-bottom: 24px;
+
+}
+
+.title-web {
+  margin-top: 16px;
+  margin-bottom: 24px;
+
+}
+
+.card-title {
+margin-bottom: 48px;
+
+}
+
+.hide {
+  display:none;
+}
+
+.fa-envelope {
+  font-size: 24px
+}
+
+.fa-map-marker-alt {
+   font-size: 24px;
+}
+
+.container-contact {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 30px;
+}
+
+.form-contact {
+  text-align: center;
+}
+
+.title-contact {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.title-email {
+  font-size: 16px;
+}
+
+.button-photography {
+  border-radius: 4px;
+  color: white;
+  background-color: grey;
+}
+
+.button-web {
+  border-radius: 4px;
+  color: white;
+  background-color: grey;
+}
+
+.followmywork {
+  display: block;
+  padding-top: 16px;
+}
+
+
