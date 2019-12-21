@@ -234,7 +234,7 @@
         <div class="container-contact">
           <div class="contact-item">
             <i class="far fa-envelope"></i>
-            <div class="title-email">EMAIL</div>
+            <div class="title-email"></div>
             <a href="mailto:axellezeller@hotmail.com">axellezeller@hotmail.com</a>
           </div>
           <div class="item-geolocalisation">
@@ -243,19 +243,23 @@
           </div>
         </div>
 
-        <div class="form-contact">
-          <form>
-            First name:<br>
-            <input type="text" name="firstname"><br>
-            Last name:<br>
-            <input type="text" name="lastname"><br>
-            Email:<br>
-            <input type="text" name="email"><br>
-            Message:<br>
-            <textarea name="message" rows="10" cols="30"></textarea>
-            <input type="submit" value="Submit">
-          </form>
-        </div>
+        <form class="form-contact">
+          <div class="form-row">
+            <div class="name">
+              First name:<br>
+              <input type="text" name="firstname"><br>
+              Last name:<br>
+              <input type="text" name="lastname"><br>
+            </div>
+            <div class="message">
+              Email:<br>
+              <input type="text" name="email"><br>
+              Message:<br>
+              <textarea name="message" rows="10" cols="30"></textarea>
+            </div>
+          </div>
+          <input class="form-contact-submit" type="submit" value="Submit">
+        </form>
 
       </div>
     </div>
