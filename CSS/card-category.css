@@ -67,7 +67,7 @@ margin-bottom: 48px;
 .form-row {
   display: flex;
   align-items: flex-start;
-  justify-content: space-around;
+  justify-content: center;
   padding-bottom: 30px;
   width: 100%;
 }
@@ -99,9 +99,32 @@ margin-bottom: 48px;
   padding-top: 16px;
 }
 
-.contact-item {
- padding-right: 140px;
 
+.textarea {
+ height: 80px;
+}
+
+.name {
+  margin-right: 140px;
+}
+
+input[type=text] {
+width: 232px;
+border-radius: 4px;
+}
+
+.item-geolocalisation p {
+  margin-bottom: 0px;
+}
+
+.message textarea {
+ height: 150px;
+ border-radius: 4px;
+}
+
+.form-contact-submit {
+  border-radius: 4px;
+  padding: 8px 24px;
 }
 
 
