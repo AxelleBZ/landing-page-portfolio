@@ -5,7 +5,10 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
@@ -64,8 +67,8 @@
           </div>
 
           <div class="card-actions">
-            <button class="button-photography"><a href="mailto:hello@axellezellerphotography.com">me contacter pour un projet photo</a></button>
-            <a class="followmywork" href="https://www.behance.net/axellez" target="-blank">follow my work</a>
+            <a href="mailto:hello@axellezellerphotography.com" class="button-card">me contacter pour un projet photo</a>
+            <a class="button-card button-white" href="https://www.behance.net/axellez" target="-blank">follow my work</a>
           </div>
         </div>
 
@@ -87,7 +90,7 @@
               <img src="images/leaves.jpg" alt="...">
               <div class="carousel-caption d-none d-md-block">
                 <h5>Fall</h5>
-                <p><a href="https://www.behance.net/gallery/87903545/Fall-in-Montreal" target="_blank">pour en voir plus</a></p>
+                <a href="https://www.behance.net/gallery/87903545/Fall-in-Montreal" target="_blank">pour en voir plus</a>
               </div>
             </div>
 
@@ -164,8 +167,8 @@
           </div>
 
           <div class="card-actions">
-            <button class="button-web"><a href="mailto:hello@axellezellerweb.com">me contacter pour un projet web</a></button>
-            <a  class="followmywork" href="https://github.com/AxelleBZ" target="-blank">follow my work</a>
+            <a href="mailto:hello@axellezellerweb.com" class="button-card">me contacter pour un projet web</a>
+            <a class="button-card button-white" href="https://github.com/AxelleBZ" target="-blank">follow my work</a>
           </div>
         </div>
 
@@ -231,7 +234,7 @@
 
         <h2 class="title-contact">CONTACT</h2>
 
-        <form class="form-contact">
+        <form class="form-contact" id="ajax-contact" method="post" action="mailer.php">
           <div class="form-row">
             <div class="name">
               <div class="contact-item">
@@ -240,9 +243,9 @@
                 <a href="mailto:axellezeller@hotmail.com">axellezeller@hotmail.com</a>
               </div>
               First name:<br>
-              <input type="text" name="firstname"><br>
+              <input type="text" name="firstname" id="firstname" required><br>
               Last name:<br>
-              <input type="text" name="lastname"><br>
+              <input type="text" name="lastname" id="lastname" required><br>
             </div>
             <div class="message">
               <div class="item-geolocalisation">
@@ -250,13 +253,15 @@
                 <p>curently based in Montreal</p>
               </div>
               Email:<br>
-              <input class="input-email" type="text" name="email"><br>
+              <input class="input-email" type="text" name="email" id="email" required><br>
               Message:<br>
-              <textarea name="message" rows="10" cols="30"></textarea>
+              <textarea name="message" id="message" rows="10" cols="30" required></textarea>
             </div>
           </div>
           <input class="form-contact-submit" type="submit" value="Submit">
         </form>
+
+        <div id="form-messages"></div>
 
       </div>
     </div>
@@ -271,25 +276,25 @@
     <div class="list-footer">
       <ul class="list-inline">
         <li>
-         <a href="">
+         <a href="https://www.instagram.com/montreal_for_a_while/">
             <i class="fab fa-instagram"></i>
          </a>
         </li>
 
         <li>
-         <a href="">
+         <a href="https://www.linkedin.com/in/axelle-zeller/">
             <i class="fab fa-linkedin"></i>
          </a>
         </li>
 
         <li>
-         <a href="">
+         <a href="https://github.com/AxelleBZ">
             <i class="fab fa-github"></i>
          </a>
         </li>
       </ul>
     </div>
-    <p class="p-footer">MISE A JOUR DECEMBRE 2019</p>
+    <p class="p-footer">MISE A JOUR JANVIER 2020</p>
   </div>
 
   <div class="top-arrow">

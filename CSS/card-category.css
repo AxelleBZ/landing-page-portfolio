@@ -7,7 +7,7 @@
   padding-top: 30px;
   text-align: center;
   padding-bottom: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 80px;
   scroll-behavior: smooth;
 }
 .card-category .card-category-img {
@@ -18,16 +18,19 @@
   border-radius: 50%;
 }
 
+.card-actions {
+  display: flex;
+  flex-direction: row;
+}
+
 .title-photography {
   margin-top: 16px;
   margin-bottom: 24px;
-
 }
 
 .title-web {
   margin-top: 16px;
   margin-bottom: 24px;
-
 }
 
 .card-title {
@@ -82,23 +85,19 @@ margin-bottom: 48px;
   font-size: 16px;
 }
 
-.button-photography {
+.button-card {
   border-radius: 4px;
   color: white;
-  background-color: grey;
+  margin-right: 32px;
+  margin-bottom: 24px;
+  border: white solid 1px;
+  padding: 8px 16px;
 }
 
-.button-web {
-  border-radius: 4px;
-  color: white;
-  background-color: grey;
+.button-white {
+  background-color: white;
+  color: black;
 }
-
-.followmywork {
-  display: block;
-  padding-top: 16px;
-}
-
 
 .textarea {
  height: 80px;
@@ -125,6 +124,19 @@ border-radius: 4px;
 .form-contact-submit {
   border-radius: 4px;
   padding: 8px 24px;
+}
+
+.contact-item {
+  padding-bottom: 24px;
+}
+
+.item-geolocalisation {
+  padding-bottom: 24px;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: -48px;
 }
 
 
