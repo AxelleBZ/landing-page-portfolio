@@ -1,0 +1,26 @@
+/*for mobile only*/
+@media (max-width: 540px) {
+
+  .container {
+    width: 300px;
+  }
+}
+
+/*for tablet only*/
+@media (max-width: 768px) {
+  .container {
+    width: 500px;
+  }
+
+  .name {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+

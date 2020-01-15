@@ -7,7 +7,7 @@
   padding-top: 30px;
   text-align: center;
   padding-bottom: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 80px;
   scroll-behavior: smooth;
 }
 .card-category .card-category-img {
@@ -18,21 +18,23 @@
   border-radius: 50%;
 }
 
+.card-actions {
+  display: flex;
+  flex-direction: row;
+}
+
 .title-photography {
   margin-top: 16px;
   margin-bottom: 24px;
-
 }
 
 .title-web {
   margin-top: 16px;
   margin-bottom: 24px;
-
 }
 
 .card-title {
 margin-bottom: 48px;
-
 }
 
 .hide {
@@ -49,15 +51,29 @@ margin-bottom: 48px;
 
 .container-contact {
   display:flex;
-  flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-around;
   padding-bottom: 30px;
+  padding-top: 24px;
 }
 
 .form-contact {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 30px;
+  width: 100%;
 }
+
+.form-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-bottom: 30px;
+  width: 100%;
+}
+
 
 .title-contact {
   text-align: center;
@@ -68,21 +84,59 @@ margin-bottom: 48px;
   font-size: 16px;
 }
 
-.button-photography {
+.button-card {
   border-radius: 4px;
   color: white;
-  background-color: grey;
+  margin-right: 32px;
+  margin-bottom: 24px;
+  border: white solid 1px;
+  padding: 8px 16px;
 }
 
-.button-web {
+.button-white {
+  background-color: white;
+  color: black;
+}
+
+.textarea {
+ height: 80px;
+}
+
+.name {
+  margin-right: 140px;
+}
+
+input[type=text] {
+width: 232px;
+border-radius: 4px;
+}
+
+.item-geolocalisation p {
+  margin-bottom: 0px;
+}
+
+.message textarea {
+ height: 150px;
+ border-radius: 4px;
+}
+
+.form-contact-submit {
   border-radius: 4px;
-  color: white;
-  background-color: grey;
+  padding: 8px 24px;
+  margin-top: 40px;
 }
 
-.followmywork {
-  display: block;
-  padding-top: 16px;
+.contact-item {
+  padding-bottom: 24px;
+}
+
+.item-geolocalisation {
+  padding-bottom: 24px;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: -48px;
 }
 
 
