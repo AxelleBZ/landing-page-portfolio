@@ -1,0 +1,60 @@
+.footer {
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  color: black;
+  flex-direction: column;
+  height: 350px;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.list-inline li {
+  display: inline-block;
+  text-align: center;
+  margin-right: 32px;
+}
+
+.list-inline li:last-child {
+  margin-right: 0;
+  }
+
+
+.list-inline a {
+  font-size: 32px;
+  color: black;
+  list-style: none;
+}
+
+.list-inline {
+  padding-left: 0;
+  margin-top: 40px;
+}
+
+.list-footer {
+  margin-bottom: 100px;
+}
+
+.title-footer {
+  color: black;
+  font-size: 24px;
+}
+
+.p-footer {
+  margin-bottom: 100px;
+  color: black;
+}
+
+.fa-sort-up {
+font-size: 48px;
+color: white;
+}
+
+.top-arrow {
+  text-align: center;
+}
+
+.footer a:hover {
+  color: black;
+}
+

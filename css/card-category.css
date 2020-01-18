@@ -1,0 +1,142 @@
+.card-category {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  flex-direction: column;
+  padding-top: 30px;
+  text-align: center;
+  padding-bottom: 16px;
+  margin-bottom: 80px;
+  scroll-behavior: smooth;
+}
+.card-category .card-category-img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  align-items:center;
+  border-radius: 50%;
+}
+
+.card-actions {
+  display: flex;
+  flex-direction: row;
+}
+
+.title-photography {
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.title-web {
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.card-title {
+margin-bottom: 48px;
+}
+
+.hide {
+  display:none;
+}
+
+.fa-envelope {
+  font-size: 24px
+}
+
+.fa-map-marker-alt {
+   font-size: 24px;
+}
+
+.container-contact {
+  display:flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding-bottom: 30px;
+  padding-top: 24px;
+}
+
+.form-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 30px;
+  width: 100%;
+}
+
+.form-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-bottom: 30px;
+  width: 100%;
+}
+
+
+.title-contact {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.title-email {
+  font-size: 16px;
+}
+
+.button-card {
+  border-radius: 4px;
+  color: white;
+  margin-right: 32px;
+  margin-bottom: 24px;
+  border: white solid 1px;
+  padding: 8px 16px;
+}
+
+.button-white {
+  background-color: white;
+  color: black;
+}
+
+.textarea {
+ height: 80px;
+}
+
+.name {
+  margin-right: 140px;
+}
+
+input[type=text] {
+width: 232px;
+border-radius: 4px;
+}
+
+.item-geolocalisation p {
+  margin-bottom: 0px;
+}
+
+.message textarea {
+ height: 150px;
+ border-radius: 4px;
+}
+
+.form-contact-submit {
+  border-radius: 4px;
+  padding: 8px 24px;
+  margin-top: 40px;
+}
+
+.contact-item {
+  padding-bottom: 24px;
+}
+
+.item-geolocalisation {
+  padding-bottom: 24px;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: -48px;
+}
+
+
