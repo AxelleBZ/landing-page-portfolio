@@ -1,12 +1,12 @@
 
 @import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
 @import url('https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet"');
-@import url("css/banner.css");
-@import url("css/card-category.css");
-@import url("css/footer.css");
-@import url("css/navbar.css");
-@import url("css/carousel.css");
-@import url("css/mobile.css");
+@import url("css/banner");
+@import url("css/card-category");
+@import url("css/footer");
+@import url("css/navbar");
+@import url("css/carousel");
+@import url("css/mobile");
 
 
 @media (max-width: 960px) {
