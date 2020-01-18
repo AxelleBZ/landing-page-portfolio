@@ -42,6 +42,10 @@
         } else {
             // Set a 500 (internal server error) response code.
             http_response_code(500);
+            echo "recipient : $recipient";
+            echo "subject : $subject";
+            echo "email_content : $email_content";
+            echo "email_headers : $email_headers";
             echo "Oops! Something went wrong and we couldn't send your message.";
         }
 
