@@ -30,29 +30,6 @@
   $email_content .= "Email: $email\n\n";
   $email_content .= "Message:\n$message\n";
 
-  // Send the email.
-  $request_body2 = json_decode('{
-    "personalizations": [
-      {
-        "to": [
-          {
-            "email": $recipient
-          }
-        ],
-        "subject": $subject
-      }
-    ],
-    "from": {
-      "email": $email
-    },
-    "content": [
-      {
-        "type": "text/plain",
-        "value": $email_content
-      }
-    ]
-  }');
-
   $request_body = json_decode('{
     "personalizations": [
       {
@@ -70,29 +47,28 @@
     "content": [
       {
         "type": "text/plain",
-        "value": "Message from : '. $email .', message : '. $message .'"
+        "value": "Email : '. $email .'\n Firstname : '. $firstname .'\n Lastname : '. $lastname .'\n  message : '. $message .'"
       }
     ]
   }');
 
-
   $apiKey = getenv('SENDGRID_API_KEY');
   $sg = new \SendGrid($apiKey);
 
-  $response = $sg->client->mail()->send()->post($request_body);
-  echo $response->statusCode();
-  echo $response->body();
-  echo $response->headers();
+  // $response = $sg->client->mail()->send()->post($request_body);
+  // echo $response->statusCode();
+  // echo $response->body();
+  // echo $response->headers();
 
   // Send the email.
   if ($sg->client->mail()->send()->post($request_body)) {
       // Set a 200 (okay) response code.
-      // http_response_code(200);
-      // echo "Thank You! Your message has been sent.";
+      http_response_code(200);
+      echo "Thank You! Your message has been sent.";
   } else {
       // Set a 500 (internal server error) response code.
-      // http_response_code(500);
-      // echo "Oops! Something went wrong and we couldn't send your message.";
+      http_response_code(500);
+      echo "Oops! Something went wrong and we couldn't send your message.";
   }
 
 ?>
