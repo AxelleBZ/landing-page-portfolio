@@ -70,7 +70,7 @@
     "content": [
       {
         "type": "text/plain",
-        "value": "'. $email_content .'"
+        "value": "'. $message .'"
       }
     ]
   }');
