@@ -70,7 +70,7 @@
     "content": [
       {
         "type": "text/plain",
-        "value": "Hello, Email!"
+        "value": "'. $email_content .'"
       }
     ]
   }');
@@ -79,23 +79,20 @@
   $apiKey = getenv('SENDGRID_API_KEY');
   $sg = new \SendGrid($apiKey);
 
-  $response = $sg->client->mail()->send()->post($request_body);
-  echo $response->statusCode();
-  echo $response->body();
-  echo $response->headers();
+  // $response = $sg->client->mail()->send()->post($request_body);
+  // echo $response->statusCode();
+  // echo $response->body();
+  // echo $response->headers();
 
   // Send the email.
   if ($sg->client->mail()->send()->post($request_body)) {
       // Set a 200 (okay) response code.
-      // http_response_code(200);
-      // echo "Thank You! Your message has been sent.";
-      // echo $response->statusCode();
-      // echo $response->body();
-      // echo $response->headers();
+      http_response_code(200);
+      echo "Thank You! Your message has been sent.";
   } else {
       // Set a 500 (internal server error) response code.
-      // http_response_code(500);
-      // echo "Oops! Something went wrong and we couldn't send your message.";
+      http_response_code(500);
+      echo "Oops! Something went wrong and we couldn't send your message.";
   }
 
 ?>
