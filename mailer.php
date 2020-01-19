@@ -31,7 +31,7 @@
   $email_content .= "Message:\n$message\n";
 
   // Send the email.
-  $request_body = json_decode('{
+  $request_body2 = json_decode('{
     "personalizations": [
       {
         "to": [
@@ -52,6 +52,29 @@
       }
     ]
   }');
+
+  $request_body = json_decode('{
+    "personalizations": [
+      {
+        "to": [
+          {
+            "email": $recipient
+          }
+        ],
+        "subject": "Hello World from the SendGrid PHP Library!"
+      }
+    ],
+    "from": {
+      "email": "test@example.com"
+    },
+    "content": [
+      {
+        "type": "text/plain",
+        "value": "Hello, Email!"
+      }
+    ]
+  }');
+
 
   $apiKey = getenv('SENDGRID_API_KEY');
   $sg = new \SendGrid($apiKey);
