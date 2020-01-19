@@ -70,7 +70,7 @@
     "content": [
       {
         "type": "text/plain",
-        "value": "'. $message .'"
+        "value": "Message from : '. $email .', message : '. $message .'"
       }
     ]
   }');
