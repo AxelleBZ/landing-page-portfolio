@@ -58,14 +58,14 @@
       {
         "to": [
           {
-            "email": '. $recipient .'
+            "email": "'. $recipient .'"
           }
         ],
-        "subject": '. $subject .'
+        "subject": "'. $subject .'"
       }
     ],
     "from": {
-      "email": '. $email .'
+      "email": "'. $email .'"
     },
     "content": [
       {
