@@ -65,7 +65,7 @@
       }
     ],
     "from": {
-      "email": "'. $email .'"
+      "email": "contact@axellezeller.fr"
     },
     "content": [
       {
@@ -80,11 +80,9 @@
   $sg = new \SendGrid($apiKey);
 
   $response = $sg->client->mail()->send()->post($request_body);
-  http_response_code(200);
-  echo "Thank You! Your message has been sent.";
-  // echo $response->statusCode();
-  // echo $response->body();
-  // echo $response->headers();
+  echo $response->statusCode();
+  echo $response->body();
+  echo $response->headers();
 
   // Send the email.
   if ($sg->client->mail()->send()->post($request_body)) {
