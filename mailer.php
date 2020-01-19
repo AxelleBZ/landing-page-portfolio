@@ -58,7 +58,7 @@
       {
         "to": [
           {
-            "email": $recipient
+            "email": '. $recipient .'
           }
         ],
         "subject": "Hello World from the SendGrid PHP Library!"
@@ -88,7 +88,10 @@
   if ($sg->client->mail()->send()->post($request_body)) {
       // Set a 200 (okay) response code.
       http_response_code(200);
-      echo "Thank You! Your message has been sent.";
+      echo "Thank You! Your message has been sent.\n";
+      echo $response->statusCode() . "\n";
+      echo $response->body() . "\n";
+      echo $response->headers();
   } else {
       // Set a 500 (internal server error) response code.
       http_response_code(500);
