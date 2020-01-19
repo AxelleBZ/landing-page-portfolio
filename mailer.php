@@ -56,7 +56,7 @@
   $sg = new \SendGrid($apiKey);
 
   $response = $sg->client->mail()->send()->post($request_body);
-  // echo $response->statusCode();
+  echo "statusCode : " . $response->statusCode();
   // echo $response->body();
   // echo $response->headers();
 
