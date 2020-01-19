@@ -58,14 +58,14 @@
       {
         "to": [
           {
-            "email": "axellezeller@hotmail.fr"
+            "email": '. $recipient .'
           }
         ],
-        "subject": "Hello Again"
+        "subject": '. $subject .'
       }
     ],
     "from": {
-      "email": "zellerbaptiste@hotmail.com"
+      "email": '. $email .'
     },
     "content": [
       {
